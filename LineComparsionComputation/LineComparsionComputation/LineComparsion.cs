@@ -28,9 +28,13 @@ namespace LineComparsionComputation
             {
                 Console.WriteLine("lines are equal");
             }
-            else
+            if (lengthOne.CompareTo(lengthTwo) < 0)
             {
-                Console.WriteLine("lines are not equal");
+                Console.WriteLine("the second line is greater than the first line");            
+            }
+            if(lengthOne.CompareTo(lengthTwo) > 0)
+            {
+                Console.WriteLine("the first line is greater than the second line");
             }
         }
     }
