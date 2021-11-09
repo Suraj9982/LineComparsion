@@ -7,8 +7,11 @@ namespace LineComparsionComputation
         static void Main(string[] args)
         {
             Console.WriteLine("welcome to Line Comaprsion Computation");
-            LineComparsion length = new LineComparsion(2.0,3.0,1.0,2.0);
-            length.checklength();
+            LineComparsion lineone = new LineComparsion(2.0,3.0,1.0,2.0);
+            double lengthOne = lineone.checklength();
+            LineComparsion lineTwo = new LineComparsion(2.0, 3.0, 1.0, 2.0);
+            double lengthtwo = lineTwo.checklength();
+            lineTwo.checkcomparsion(lengthOne, lengthtwo);
         }
     }
 }

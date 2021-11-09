@@ -16,9 +16,22 @@ namespace LineComparsionComputation
             this.yOne = yOne;
             this.yTwo = yTwo;
         }
-        public void checklength()
+        public double checklength()
         {
-            Console.WriteLine("length of a line is " + Math.Sqrt(Math.Pow(this.xTwo - this.xOne, 2) + (Math.Pow(this.yTwo - this.yOne, 2))));
+            double result = Math.Sqrt(Math.Pow(this.xTwo - this.xOne, 2) + (Math.Pow(this.yTwo - this.yOne, 2)));
+            Console.WriteLine("length of a line is " + result);
+            return result;
+        }
+        public void checkcomparsion(double lengthOne,double lengthTwo)
+        {
+            if (lengthOne.CompareTo(lengthTwo) == 0)
+            {
+                Console.WriteLine("lines are equal");
+            }
+            else
+            {
+                Console.WriteLine("lines are not equal");
+            }
         }
     }
 }
